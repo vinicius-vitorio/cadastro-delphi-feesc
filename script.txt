@@ -1,0 +1,18 @@
+
+CREATE DATABASE dados
+
+use dados
+go
+
+CREATE TABLE cliente 
+(
+    idCliente int not null IDENTITY(0,1) PRIMARY KEY,
+    nome varchar(50) null,
+    email varchar(45) null,
+    cidade varchar(30) null,
+    estado char(2) null,
+    CPF varchar(20) null,
+    RG varchar(20) not null
+);
+
+select * from cliente
